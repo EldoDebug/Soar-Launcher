@@ -83,7 +83,7 @@ public class ClientUtils {
             launchCMD.add(assetsF.getAbsolutePath());
             launchCMD.add("-assetIndex");
             launchCMD.add("1.8");
-            System.out.println(launchCMD);
+
             final Process proc = new ProcessBuilder(launchCMD).start();
             final BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
             String isLine;
